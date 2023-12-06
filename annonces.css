@@ -1,0 +1,197 @@
+.borderannonce {
+    border-radius: 10px;
+    padding: 10px;
+    width : 100%;
+    margin: 10px;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+}
+
+.btn{
+    justify-content: center;
+}
+
+.annonce{
+    display: flex;
+    margin: 75px;
+    width: 100%;
+}
+
+html{
+    
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+body{
+
+
+    background-color: rgb(248, 245, 248);
+}
+
+header{
+    height: 4rem;
+    padding: 0 90px 0 90px;
+    background-color: rgb(177, 178, 245);
+    position: sticky;
+}
+.hcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+nav ul a{
+    margin: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.right input{
+    margin: 0 15px 0 15px;
+}
+
+.navul{
+    list-style: none;
+}
+
+.sidebar{
+    margin-top: 3.5%;
+    margin-left: 2%;
+    padding: 2%;
+    width: 20vw;
+    height: 75vw;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.tccontent{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#popup{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: rgb(177, 178, 245);
+    text-align: right;
+    padding: 50px;
+    border-radius: 5%;
+}
+
+#popup1{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: rgb(177, 178, 245);
+    text-align: right;
+    padding: 50px;
+    border-radius: 5%;
+}
+
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+.H1inscr{
+    display:flex;
+    justify-content: center;
+}
+
+.popupfilter{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(10, 10, 10, .7);
+}
+
+.popupfilter1{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, .7);
+}
+
+.userAdmin{
+    width: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.showUsers{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.form {
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+
+.grid-left {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+}
+
+.grid-right {
+    grid-column: 2;
+}
+
+.hidedetails{
+    display: none;
+}
+
+.showdetails{
+    display : block;
+}
+
+.divprinc{
+    display: grid;
+}

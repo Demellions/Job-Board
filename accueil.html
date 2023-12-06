@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="accueil.css">
+    </head>
+<body>
+    <header>
+        <div class="hcontent">
+            <div class="left">
+                <a href="">
+                    <h1 class="nomsite">
+                        <a href="annonces.html">Infinity</a>
+                    </h1>
+                <nav>
+                    <ul class="navul">
+                        <a href="accueil.html">Accueil</a>
+                        <a href="annonces.html">Annonces</a>
+                        <a href="entreprise.html">Entreprise</a>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="right">
+                <input type="text" placeholder="trouver un job, etc...">
+                <button id="inscription">S'inscrire</button>
+                <button id="connexion">Se connecter</button>
+            </div>
+        </div>
+    </header>
+    <section >
+        <H1>Accueil</H1>
+        <div class="accflex">
+        <h2>Bienvenue chez Infinity !</h2>
+        <p>
+            Bienvenue sur Infinity, votre passerelle vers l'infini des opportunités professionnelles ! Ici, nous ne fixons aucune limite à vos rêves de carrière. Notre plateforme, c'est bien plus qu'un simple site d'annonces d'emploi, c'est un voyage sans fin vers un avenir prometteur.
+            
+            Infinity, c'est l'endroit où chaque opportunité est une étoile dans un ciel infini de possibilités. Imaginez votre carrière comme une aventure sans fin, où chaque mission temporaire est une étape vers l'excellence.</p>
+            
+        <p>
+            Sur notre site, l'infini devient votre terrain de jeu professionnel.
+        
+        Rejoignez notre communauté d'explorateurs de l'infini, où les opportunités sont aussi vastes que l'univers lui-même. Chaque annonce sur notre plateforme est une porte vers un avenir sans fin, un chemin vers la croissance perpétuelle.</p>
+            
+        <p>
+            Emporter par le courant de l'infini, où chaque clic vous rapproche de votre prochain défi passionnant. Sur Infinity, nous croyons que votre potentiel est infini, et nous sommes là pour vous aider à l'explorer sans limites.
+        
+        Préparez-vous à repousser les frontières de votre carrière, à élargir vos horizons professionnels et à découvrir un monde sans fin d'opportunités. L'infini n'est pas seulement un concept ici, c'est une réalité que vous pouvez saisir dès aujourd'hui.
+        
+        Rejoignez-nous sur Infinity et faites partie d'une aventure qui n'a ni fin ni frontière. L'infini est à portée de main, et il n'attend que vous pour être exploré. Votre carrière est prête à s'élever vers l'infini et au-delà.
+        </p>
+        </div>  
+    </section>
+    <div class="popupfilter" id="popupfilter">
+        <div id="popup">
+            <form id="form">
+                <h1 class="H1inscr">Fait ton inscription ici !</h1>
+                <label for="username">Username :</label>
+                <input type="text" name="username" id="username"><br>
+                
+                <label for="mdp1">Mot de passe :</label>
+                <input type="password" name="password" id="password">
+                <input type="hidden" name="hide" id="hide" /><br>
+                
+                <label for="name_people">Nom :</label>
+                <input type="text" name="name_people" id="name_people"><br>
+                
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom"><br>
+                
+                <label for="mail">Votre mail :</label>
+                <input type="mail" name="mail" id="mail"><br>
+                
+                <label for="portable">Téléphone portable</label>
+                <input type="number" name="portable" id="portable"><br>
+        
+                <label for="type_poste">Poste Recherché</label>
+                <input type="text" name="type_poste" id="type_poste"><br>
+        
+                <div style="color:red" id="err"></div><br>
+                
+                <button type="submit" class="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+        <div class="popupfilter1" id="popupfilter1">
+            <div id="popup1">
+                <form id="form_connect">
+                    <h1 class="H1inscr">Connecte toi ici !</h1>
+                    <label for="username">Username :</label>
+                    <input type="text" name="username" id="username"><br>
+                    
+                    <label for="mdp1">Mot de passe :</label>
+                    <input type="password" name="password" id="password"><br>
+        
+                    <button type="submit" class="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+<script src="script.js"></script>
+<script src="fetch4.js"></script>
+</body>
+</html>

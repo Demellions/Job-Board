@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="annonces.css">
+    <title>Infinity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Nunito:wght@200&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hcontent">
+            <div class="left">
+                <a href="">
+                    <h1 class="nomsite">
+                        Infinity
+                    </h1>
+                </a>
+                <nav>
+                    <ul class="navul">
+                        <li>Accueil</li>
+                        <li>Annonces</li>
+                        <li>Entreprise</li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="right">
+                <input type="text" placeholder="trouver un job, etc...">
+                <button onclick = delog() id="connexion">Se déconnecter</button>
+                <a href="compte.html"><button id="connexion">Mon compte</button></a>
+            </div>
+        </div>
+</header>
+<div class="flex">
+    <div class="sidebar">
+        <h1 class="sidetitle">
+            Filtres
+        </h1>
+            <div class="contratype">
+                <h2>Type de contrat</h2>
+            <div class="tccontent">
+                <div class="cdi">
+                    <input type="checkbox" id="cdi">
+                    <label for="cdi">CDI</label>
+                </div>
+                <div class="cdd">
+                    <input type="checkbox" id="cdd">
+                    <label for="cdd">CDD</label>
+                </div>
+                <div class="stage">
+                    <input type="checkbox" id="stage">
+                    <label for="stage">Stage</label>
+                </div>
+                <div class="alternance">
+                    <input type="checkbox" id="alternance">
+                    <label for="alternance">Alternance</label>
+                </div>
+                <div class="tempsplein">
+                    <input type="checkbox" id="tempsplein">
+                    <label for="tempsplein">Temps plein</label>
+                </div>
+                <div class="tempspartiel">
+                    <input type="checkbox" id="tempspartiel">
+                    <label for="tempspartiel">Temps partiel</label>   
+                </div>
+                <div class="cdi">
+                    <input type="checkbox" id="cdi">
+                    <label for="cdi">CDI</label>
+                   
+                </div>
+                <div class="cdi">
+                    <input type="checkbox" id="cdi">
+                    <label for="cdi">CDI</label>             
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="salaire">
+            <h2>Salaire</h2>
+            <input type="range" min="0" max="54.94" step="0.55" id="salaire">
+            <p>Horaire: <span id="salaire-valueh">25</span></p>
+            <p>Mensuel: <span id="salaire-valuem">25</span></p>
+            <p>Annuel: <span id="salaire-valuea">25</span></p>
+        </div>
+
+        <script>
+            // Get the input element
+            var salaireInput = document.getElementById("salaire");
+    
+            // Get the span element to display the value
+            var salaireValueh = document.getElementById("salaire-valueh");
+            var salaireValuem = document.getElementById("salaire-valuem");
+            var salaireValuea = document.getElementById("salaire-valuea");
+    
+            // Update the span element when the input value changes
+            salaireInput.addEventListener("input", function() {
+                // Set the text content of the span element to the input value
+                salaireValueh.textContent = salaireInput.value;
+                salaireValuem.textContent = salaireInput.value * 35 * 4.33;
+                salaireValuea.textContent = salaireInput.value * 35 * 52;
+            });
+        </script>
+
+        <div class="teletravail">
+            <h2>Teletravail</h2>
+            <div class="oui">
+                <input type="radio" id="oui" name="tt">
+                <label for="oui">Oui</label>   
+            </div>
+            <div class="non">
+                <input type="radio" id="non" name="tt">
+                <label for="non">Non</label>
+               
+            </div>
+        </div>
+
+        <div class="zone">
+            <h2>Zone géographique</h2>
+            <select name="pays" id="pays">
+                <option value="none">--choisir pays--</option>
+                <option value="france">France</option>
+                <option value="usa">Etats-Unis</option>
+                <option value="uk">Royaume-Uni</option>
+                <option value="japon">Japon</option>
+                <option value="cmr">Cameroun</option>
+                <option value="france">France</option>
+                <option value="ang">Angleterre</option>
+            </select>
+        </div> 
+</div>
+<section class="annonce" id="a">
+    
+</section>
+</div>
+<div class="popupfilter" id="popupfilter">
+<div id="popup">
+    <form id="form">
+        <h1 class="H1inscr">Fait ton inscription ici !</h1>
+        <label for="username">Username :</label>
+        <input type="text" name="username" id="username"><br>
+        
+        <label for="mdp1">Mot de passe :</label>
+        <input type="password" name="password" id="password">
+        <input type="hidden" name="hide" id="hide" /><br>
+        
+        <label for="name_people">Nom :</label>
+        <input type="text" name="name_people" id="name_people"><br>
+        
+        <label for="prenom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom"><br>
+        
+        <label for="mail">Votre mail :</label>
+        <input type="mail" name="mail" id="mail"><br>
+        
+        <label for="portable">Téléphone portable</label>
+        <input type="tel" name="portable" id="portable"><br>
+
+        <label for="type_poste">Poste Recherché</label>
+        <input type="text" name="type_poste" id="type_poste"><br>
+
+        <div style="color:red" id="err"></div><br>
+        
+        <button type="submit" class="submit" id="submit">Submit</button>
+    </form>
+</div>
+</div>
+<div class="popupfilter1" id="popupfilter1">
+    <div id="popup1">
+        <form id="form_connect">
+            <h1 class="H1inscr">Connecte toi ici !</h1>
+            <label for="username">Username :</label>
+            <input type="text" name="username" id="username_co"><br>
+            
+            <label for="mdp1">Mot de passe :</label>
+            <input type="password" name="password" id="password_co"><br>
+
+            <button type="submit" class="submit" id="submit_co">Submit</button>
+        </form>
+    </div>
+</div>    
+<script src="script.js"></script>
+<script src="fetch.js"></script>
+<script src="display_all_ads.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

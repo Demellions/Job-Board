@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprise</title>
+    <link rel="stylesheet" href="entreprise.css">
+</head>
+<body>
+    <header>
+        <div class="hcontent">
+            <div class="left">
+                <a href="">
+                    <h1 class="nomsite">
+                        <a href="annonces.html">Infinity</a>
+                    </h1>
+                <nav>
+                    <ul class="navul">
+                        <a href="accueil.html">Accueil</a>
+                        <a href="annonces.html">Annonces</a>
+                        <a href="entreprise.html">Entreprise</a>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="right">
+                <input type="text" placeholder="trouver un job, etc...">
+                <button id="inscription">S'inscrire</button>
+                <button id="connexion">Se connecter</button>
+            </div>
+        </div>
+    </header>
+    <section>
+            <form id="form1">
+                <h1 class="addannonce">Créer ton annonce :</h1>
+                <label for="employeur">Nom de votre société :</label>
+                <input type="text" name="employeur" id="employeur"><br>
+                
+                <label for="type_poste">Type de poste :</label>
+                <input type="type_poste" name="type_poste" id="type_poste"><br>
+                
+                <label for="remuneration">Rémunération :</label>
+                <input type="number" name="remuneration" id="remuneration"><br>
+                
+                <label for="date_publi">Publication :</label>
+                <input type="date" name="date_publi" id="date_publi"><br>
+                
+                <label for="details">Détails de la mission :</label>
+                <input type="text" name="details" id="details"><br>
+                
+                <label for="adresse">Adresse du lieu :</label>
+                <input type="text" name="adresse" id="adresse"><br>
+        
+                <label for="type_contrat">Type de contrat</label>
+                <input type="text" name="type_contrat" id="type_contrat"><br>
+
+                <label for="duree_contrat">Duree de contrat :</label>
+                <input type="number" name="duree_contrat" id="duree_contrat"><br>
+
+                <label for="teletravail">En teletravail :</label>
+                <input type="text" name="teletravail" id="teletravail"><br>
+                
+                <button type="creer" class="creer" id="creer">Créer</button>
+            </form>
+    </section>
+    <div class="popupfilter" id="popupfilter">
+        <div id="popup">
+            <form id="form">
+                <h1 class="H1inscr">Fait ton inscription ici !</h1>
+                <label for="username">Username :</label>
+                <input type="text" name="username" id="username"><br>
+                
+                <label for="mdp1">Mot de passe :</label>
+                <input type="password" name="password" id="password">
+                <input type="hidden" name="hide" id="hide" /><br>
+                
+                <label for="name_people">Nom :</label>
+                <input type="text" name="name_people" id="name_people"><br>
+                
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom"><br>
+                
+                <label for="mail">Votre mail :</label>
+                <input type="mail" name="mail" id="mail"><br>
+                
+                <label for="portable">Téléphone portable</label>
+                <input type="number" name="portable" id="portable"><br>
+        
+                <label for="type_poste">Poste Recherché</label>
+                <input type="text" name="type_poste" id="type_poste"><br>
+        
+                <div style="color:red" id="err"></div><br>
+                
+                <button type="submit" class="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+        <div class="popupfilter1" id="popupfilter1">
+            <div id="popup1">
+                <form id="form_connect">
+                    <h1 class="H1inscr">Connecte toi ici !</h1>
+                    <label for="username">Username :</label>
+                    <input type="text" name="username_co" id="username_co"><br>
+                    
+                    <label for="mdp1">Mot de passe :</label>
+                    <input type="password" name="password_co" id="password_co"><br>
+        
+                    <button type="submit" class="submit" id="submit_co">Submit</button>
+                </form>
+            </div>
+        </div>    
+<script src="fetch3.js"></script>
+<script src="script.js"></script>
+<script src="fetch4.js"></script>
+</body>
+</html>

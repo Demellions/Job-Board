@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="annonces.css">
+    <title>Super Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Nunito:wght@200&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div>
+    <h1>Espace Administrateur: Utilisateurs</h1>
+    <a href="admin.html">Utilisateurs</a>
+    <a href="adminannonces.html">Annonces</a>
+    <a href="admincompanies.html">Entreprise</a>
+    <form id="form_sa">
+        <input type="text" placeholder="name_people" id="name_people">
+        <input type="text" placeholder="prenom" id="prenom">
+        <input type="text" placeholder="type_poste" id="type_poste">
+        <input type="mail" placeholder="mail" id="mail">
+        <input type="number" placeholder="portable" id="portable">
+        <input type="text" placeholder="user" id="user">
+        <input type="password" placeholder="password" id="password">
+        <button type="submit" id="Submit">Submit</button>
+    </form>
+    <div>
+        <div class="users" id="table_users">
+            
+        </div>
+    </div>
+    <div id="allUsers"></div>
+    <script src="admin.js"></script>
+</div>
+</body>
+</html>
